@@ -548,22 +548,22 @@ mappings = {
     
     },
     "consumption": {
-        "device_type": "meter",
-        "object_suffix": "meter",
+        "device_type": "sensor",
         "config": {
             "device_class": "gas",
-            "name": "meter",
+            "name": "gas_meter",
             "unit_of_measurement": "ft³",
+            "unique_id": "gasmeter1"
             "value_template": "{{ value|float }}"
         }
     
     },
     "consumption_data": {
         "device_type": "sensor",
-        "object_suffix": "meter",
         "config": {
             "device_class": "gas",
-            "name": "meter",
+            "name": "gas_meter2",
+            "unique_id": "gasmeter2"
             "unit_of_measurement": "ft³",
             "state_class": "total_increasing",
             "value_template": "{{ value|float }}"
