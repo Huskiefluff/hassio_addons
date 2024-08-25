@@ -547,29 +547,17 @@ mappings = {
         }
     
     },
-    "consumption": {
-        "device_type": "sensor",
-        "config": {
-            "device_class": "gas",
-            "name": "gas_meter",
-            "unit_of_measurement": "ft³",
-            "unique_id": "gasmeter1"
-            "state_class": "total_increasing",
-            "value_template": "{{ value|float }}"
-        }
-    
-    },
     "consumption_data": {
         "device_type": "sensor",
+        "object_suffix": "meter",
         "config": {
             "device_class": "gas",
-            "name": "gas_meter2",
-            "unique_id": "gasmeter2"
+            "state_class":"measurement",
+            "name": "Gas Meter",
+            "entity_category": "diagnostic",
             "unit_of_measurement": "ft³",
-            "state_class": "total_increasing",
             "value_template": "{{ value|float }}"
         }
-        
     },
     "strike_count": {
         "device_type": "sensor",
