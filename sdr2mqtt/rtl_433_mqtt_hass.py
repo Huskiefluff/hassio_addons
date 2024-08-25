@@ -547,7 +547,7 @@ mappings = {
         }
     
     },
-    "consumption": {
+    "consumption_data": {
         "device_type": "meter",
         "object_suffix": "meter",
         "config": {
