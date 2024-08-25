@@ -554,6 +554,7 @@ mappings = {
             "name": "gas_meter",
             "unit_of_measurement": "ft³",
             "unique_id": "gasmeter1"
+            "state_class": "total_increasing",
             "value_template": "{{ value|float }}"
         }
     
