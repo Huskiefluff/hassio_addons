@@ -548,11 +548,13 @@ mappings = {
     
     },
     "consumption": {
-        "device_type": "meter",
+        "device_type": "sensor",
         "object_suffix": "meter",
         "config": {
             "device_class": "gas",
             "name": "meter",
+            "state_class":"total_increasing",
+            "entity_category": "diagnostic",
             "unit_of_measurement": "ft³",
             "value_template": "{{ value|float }}"
         }
